@@ -1,0 +1,501 @@
+/*   
+Theme Name: Athens
+Description: Argo Child theme
+Author: NPR
+Template: argo-foundation 
+Version: 1.0
+
+*/
+
+@import url("../argo-foundation/css/960.css");
+@import url("../argo-foundation/css/foundation.css");
+
+/*.container_12 {
+background: #fff url("../argo-foundation/img/dev-images/12_col.gif") repeat-y;
+}*/
+
+@font-face {
+    font-family: 'KameronBold';
+    src: url("font/kameron-bold-webfont.eot");
+    src: url("font/kameron-bold-webfont.eot?#iefix") format('embedded-opentype'),
+         url("font/kameron-bold-webfont.woff") format('woff'),
+         url("font/kameron-bold-webfont.ttf") format('truetype'),
+         url("font/kameron-bold-webfont.svg#KameronBold") format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'KameronRegular';
+    src: url("font/kameron-regular-webfont.eot");
+    src: url("font/kameron-regular-webfont.eot?#iefix") format('embedded-opentype'),
+         url("font/kameron-regular-webfont.woff") format('woff'),
+         url("font/kameron-regular-webfont.ttf") format('truetype'),
+         url("font/kameron-regular-webfont.svg#KameronRegular") format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    background: #e1dfda url("img/athens-bg.jpg");
+	font-family: KameronRegular, georgia, times, serif;
+	text-shadow: 0 2px 2px #fff;
+	line-height: 1.5;
+	color: #666;
+	font-size: 17px;
+}
+
+/************* GLOBAL NAVIGATION ******************/
+
+.global-nav-bg {
+height: 35px;
+background: transparent;
+margin-bottom: 0;
+text-shadow: none;
+}
+
+.global-nav {
+height: 33px;
+}
+
+.station-home {
+text-indent: -10000px;
+width:70px;
+height: 37px !important;
+background: transparent url("parent-logo.png") no-repeat;
+margin: 8px 10px 0 0 !important;
+border: none !important;
+}
+
+.station-home a {
+display: block;
+width: 70px;
+height: 37px;
+}
+
+.global-nav li {
+font-family: helvetica, arial, sans-serif;
+margin-top: 10px;
+padding-left: 10px;
+line-height: 11px;
+}
+
+#wrapper .global-nav a {
+color: #928f88;
+font-weight: normal;
+font-size: 12px !important;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+#wrapper .global-nav .support a {
+background-color: #539ab0;
+color: #fff;
+}
+
+.global-nav .support a:hover {
+color: #2d2b26;
+background-color: #fff;
+border: 2px solid #ddd;
+
+}
+
+.global-nav .network-branding {
+top: 0;
+border: 1px solid #a2a2a2;
+}
+
+/************* BRANDING ******************/
+
+#header {
+height: 190px;
+padding-top: 15px;
+}
+
+.branding h1 {
+margin: 10px 0 0 0 !important;
+font-family: KameronRegular, georgia, times, serif;
+padding: 0;
+font-size: 80px
+}
+
+.branding h1 a {
+color: #5c5e54;
+}
+
+.branding h1 a:hover {
+color: #333;
+}
+
+.branding h2 {
+margin: 0 !important;
+padding: 0;
+font-size: 28px;
+color: #666;
+}
+
+.features {
+font-family: helvetica, arial, sans-serif;
+text-shadow: none;
+}
+
+.features img {
+border: 1px solid #ccc;
+}
+
+
+/************* MAIN NAVIGATION ******************/
+
+#main-nav {
+margin-top: -22px;
+}
+
+#topnav li a {
+font-family: KameronBold, georgia, times, serif;
+color: #7199a6;
+text-shadow: 0 2px 3px #f8f8f7;
+font-size: 19px;
+padding-top: 3px;
+}
+
+#topnav li:hover a, #topnav li a:hover { 
+background-color: #2d2b26;
+color: #fff; 
+border-bottom: 8px solid #2d2b26;
+text-shadow: none;
+}
+
+#topnav li .sub {
+top: 35px; 
+border: 4px solid #2d2b26;
+}
+
+#topnav .sub .inner-menu a {
+color: #7199a6;
+font-size: 14px;
+}
+
+#topnav .sub .inner-menu a:hover {
+color: #7199a6;
+}
+
+#follow-us {
+right: 210px;
+top: 4px;
+}
+
+#follow-us a {
+border: 1px solid #ccc;
+}
+
+#searchform {
+right: 0;
+top: 4px;
+}
+
+.ie6 #follow-us, .ie6 #searchform {
+top: 0;
+}
+
+/************* DONT MISS ******************/
+
+#topics-bar {
+border-top: none;
+border-bottom: 1px solid #ccc;
+font-family: helvetica, arial, sans-serif;
+}
+
+#topics-bar li a {
+font-size: 12px;
+font-weight: bold;
+background-color: transparent;
+padding: 2px 8px;
+color: #515c5f;
+line-height: 1;
+border-right: 1px solid #ccc;
+text-shadow: none;
+}
+
+#topics-bar li a:hover {
+background-color: transparent;
+text-decoration: underline;
+}
+
+#topics-bar h4 {
+color: #515c5f;
+font-weight: bold;
+font-size: 13px;
+line-height: 1.5;
+text-shadow: none;
+}
+
+#topics-bar li  {
+padding: 0;
+line-height: 1;
+}
+
+#topics-bar h5 a {
+color: #666;
+}
+
+/************* CONTENT WELL ******************/
+
+#content article {
+	border-bottom: 1px solid #c5c4be;
+}
+
+#content img {
+border: 1px solid #666;
+}
+
+#content h2 {
+margin: 20px 0 10px 0;
+font-family: KameronBold, georgia, times, serif;
+font-size: 30px;
+line-height: 1.1;
+color: #5c5d54;
+text-shadow: 0 2px 2px #f0f0f0;
+}
+
+#content h2 a {
+color: #5c5d54;
+}
+
+.single #content h2 {
+margin: 10px 0;
+}
+
+.post blockquote {
+background-color: transparent;
+border-left: 4px solid #666;
+padding: 0 0 0 20px;
+margin-left: 5px;
+color: #6f6f6f;
+font-size: 14px;
+}
+
+.category .page-title, .tag .page-title, .page .entry-title {
+color: #333;
+}
+
+#content .pull-quote, #footer h3 {
+font-family: KameronRegular, georgia, times, serif;
+font-style: normal;
+}
+
+#content .pull-quote {
+border: none;
+font-style: italic;
+font-size: 22px;
+text-shadow: 0 2px 3px #ddd;
+}
+
+#content .pull-quote p, #content .pull-quote h6 {
+font-style: normal;
+font-weight: normal;
+color: #666;
+}
+
+#content .pull-quote h6 {
+font-size: 14px;
+}
+
+#content a {
+color: #515c5f;
+text-shadow: none;
+}
+
+#content a:hover {
+text-decoration: none;
+color: #333;
+}
+
+#content .post-meta {
+font-family: Helvetica, arial, sans-serif;
+}
+
+#content .post-meta h6 {
+font-style: normal;
+}
+
+#content .post-meta h5 a, #content .post-meta a {
+color: #868583;
+font-weight: normal;
+}
+
+.ie6 .category-topics a, .ie6 .category-articles a {
+background: transparent !important;
+border: none !important;
+}
+
+#content .post-nav {
+font-family: Helvetica, arial, sans-serif;
+}
+#content .post-nav a {
+color: #868583;
+}
+
+#content .related-topics {
+margin-top: 15px;
+font-family: Helvetica, arial, sans-serif;
+}
+
+.subscribe {
+font-family: Helvetica, arial, sans-serif;
+font-size: 11px;
+line-height: 2em;
+}
+
+#content .labels li a {
+border: 1px solid #ccc;
+font-size: 11px;
+font-weight: bold;
+}
+
+#content .labels li a:hover {
+border: 1px solid #333;
+}
+
+/************* SIDEBAR ******************/
+
+#sidebar h2, #sidebar h3 {
+font-family: KameronBold, georgia, times, serif;
+font-size: 28px;
+color: #7199a6;
+text-shadow: 0 2px 3px #f8f8f7;
+margin-bottom: 5px;
+text-transform: none;
+}
+
+#sidebar li, #sidebar p {
+font-size: 12px;
+line-height: 1.6em;
+color: #666;
+}
+
+/* blogroll */
+
+.blogroll li a {
+white-space: normal;
+}
+
+/*most commented*/
+
+.level3 {
+background-color: #999;
+color: #fff;
+}
+
+.level2 {
+background-color: #ccc;
+}
+
+.level1 {
+background-color: #eee;
+}
+
+/*buttons*/
+
+#sidebar .donate h3, #sidebar .donate p {
+color: #fff;
+}
+
+#sidebar .button, #sidebar .donate .button {
+font-family: helvetica, arial, sans-serif;
+background-color: #999;
+color: #fff;
+border: 1px solid #909090;
+text-shadow: none;
+}
+
+#sidebar .button:hover, #sidebar .donate .button:hover {
+background-color: #2d2b26;
+}
+
+/*greatest hits */
+
+.widget_nav_menu h2 {
+font-family: KameronRegular, georgia, times, serif;
+font-size: 25px;
+color: #db0e0e;
+}
+
+#menu-greatest-hits li {
+font-family: KameronRegular, georgia, times, serif;
+color: #333;
+margin-left: 35px;
+font-size: 24px;
+}
+
+#menu-greatest-hits a {
+font-family: Helvetica, Arial, sans-serif;
+color: #666;
+font-weight: normal;
+}
+
+/* Related posts module */
+
+#related-posts {
+background: #efeee8;
+border: 1px solid #ccc;
+
+}
+
+#related-post-nav {
+font-family: Helvetica, arial, sans-serif;
+text-shadow: none;
+}
+
+#related-posts a {
+color: #5C5D54;
+}
+
+.items div {
+border-left: 1px solid #ccc;
+}
+
+#related-post-nav h4 {
+color: #5c5d54;
+}
+
+#related-post-nav a:hover {
+background-color:#d3e7ef;
+}
+
+#related-post-nav a.selected { 
+background-color: #78888d;
+background-image: -moz-linear-gradient(100% 100% 90deg, #a6bdc4, #78888d);
+background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#78888d), to(#a6bdc4));
+color:#fff; 
+}
+
+/************* FOOTER ******************/
+
+#site-footer {
+border-top: 2px solid #606e72;
+background-color: #78888d;
+background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#78888d), to(#78888d));
+text-shadow: 0 2px 3px #707f84;
+color: #cfcfcf;
+}
+
+#site-footer a {
+color: #ddd;
+font-weight: bold;
+}
+
+#site-footer a:hover {
+text-decoration: none;
+color: #fff;
+}
+
+#boilerplate {
+border-top: 1px solid #cfcfcf;
+font-family: Helvetica, arial, sans-serif;
+}
+
+.bio h6 {
+text-shadow: none;
+}
