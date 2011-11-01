@@ -1,26 +1,21 @@
 /*   
 Theme Name: Athens
-Description: Argo Child theme
+Description: An Argo child theme
 Author: NPR
-Template: argo-foundation 
+Template: argo
 Version: 1.0
 
 */
 
-@import url("../argo-foundation/css/960.css");
-@import url("../argo-foundation/css/foundation.css");
-
-/*.container_12 {
-background: #fff url("../argo-foundation/img/dev-images/12_col.gif") repeat-y;
-}*/
+@import url("../argo/css/960.css");
+@import url("../argo/css/foundation.css");
 
 @font-face {
     font-family: 'KameronBold';
     src: url("font/kameron-bold-webfont.eot");
     src: url("font/kameron-bold-webfont.eot?#iefix") format('embedded-opentype'),
          url("font/kameron-bold-webfont.woff") format('woff'),
-         url("font/kameron-bold-webfont.ttf") format('truetype'),
-         url("font/kameron-bold-webfont.svg#KameronBold") format('svg');
+         url("font/kameron-bold-webfont.ttf") format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -31,8 +26,7 @@ background: #fff url("../argo-foundation/img/dev-images/12_col.gif") repeat-y;
     src: url("font/kameron-regular-webfont.eot");
     src: url("font/kameron-regular-webfont.eot?#iefix") format('embedded-opentype'),
          url("font/kameron-regular-webfont.woff") format('woff'),
-         url("font/kameron-regular-webfont.ttf") format('truetype'),
-         url("font/kameron-regular-webfont.svg#KameronRegular") format('svg');
+         url("font/kameron-regular-webfont.ttf") format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -60,21 +54,6 @@ text-shadow: none;
 height: 33px;
 }
 
-.station-home {
-text-indent: -10000px;
-width:70px;
-height: 37px !important;
-background: transparent url("parent-logo.png") no-repeat;
-margin: 8px 10px 0 0 !important;
-border: none !important;
-}
-
-.station-home a {
-display: block;
-width: 70px;
-height: 37px;
-}
-
 .global-nav li {
 font-family: helvetica, arial, sans-serif;
 margin-top: 10px;
@@ -82,7 +61,7 @@ padding-left: 10px;
 line-height: 11px;
 }
 
-#wrapper .global-nav a {
+#page .global-nav a {
 color: #928f88;
 font-weight: normal;
 font-size: 12px !important;
@@ -90,22 +69,6 @@ font-weight: bold;
 text-transform: uppercase;
 }
 
-#wrapper .global-nav .support a {
-background-color: #539ab0;
-color: #fff;
-}
-
-.global-nav .support a:hover {
-color: #2d2b26;
-background-color: #fff;
-border: 2px solid #ddd;
-
-}
-
-.global-nav .network-branding {
-top: 0;
-border: 1px solid #a2a2a2;
-}
 
 /************* BRANDING ******************/
 
@@ -161,15 +124,15 @@ padding-top: 3px;
 }
 
 #topnav li:hover a, #topnav li a:hover { 
-background-color: #2d2b26;
+background-color: #5c5d54;
 color: #fff; 
-border-bottom: 8px solid #2d2b26;
+border-bottom: 8px solid #5c5d54;
 text-shadow: none;
 }
 
 #topnav li .sub {
 top: 35px; 
-border: 4px solid #2d2b26;
+border: 4px solid #5c5d54;
 }
 
 #topnav .sub .inner-menu a {
@@ -182,7 +145,6 @@ color: #7199a6;
 }
 
 #follow-us {
-right: 210px;
 top: 4px;
 }
 
@@ -219,8 +181,8 @@ text-shadow: none;
 }
 
 #topics-bar li a:hover {
-background-color: transparent;
-text-decoration: underline;
+text-decoration: none;
+color: #333;
 }
 
 #topics-bar h4 {
@@ -259,7 +221,7 @@ color: #5c5d54;
 text-shadow: 0 2px 2px #f0f0f0;
 }
 
-#content h2 a {
+#content h2 a, #content .sticky a {
 color: #5c5d54;
 }
 
@@ -276,8 +238,8 @@ color: #6f6f6f;
 font-size: 14px;
 }
 
-.category .page-title, .tag .page-title, .page .entry-title {
-color: #333;
+.category .page-title, .tag .page-title, .page .entry-title, .related-topics h4 {
+color: #5c5d54;
 }
 
 #content .pull-quote, #footer h3 {
@@ -373,27 +335,6 @@ text-transform: none;
 font-size: 12px;
 line-height: 1.6em;
 color: #666;
-}
-
-/* blogroll */
-
-.blogroll li a {
-white-space: normal;
-}
-
-/*most commented*/
-
-.level3 {
-background-color: #999;
-color: #fff;
-}
-
-.level2 {
-background-color: #ccc;
-}
-
-.level1 {
-background-color: #eee;
 }
 
 /*buttons*/
@@ -494,8 +435,4 @@ color: #fff;
 #boilerplate {
 border-top: 1px solid #cfcfcf;
 font-family: Helvetica, arial, sans-serif;
-}
-
-.bio h6 {
-text-shadow: none;
 }
